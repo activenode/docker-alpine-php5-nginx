@@ -94,6 +94,7 @@ RUN mkdir -p /var/www/app/webroot && \
 
 # Copy config files
 COPY defaultsettings_custom_pre.conf /etc/nginx/custom_conf/defaultsettings_custom_pre.conf
+COPY defaultsettings_custom_rootlocation_end.conf /etc/nginx/custom_conf/defaultsettings_custom_rootlocation_end.conf
 COPY nginx_default.conf /etc/nginx/conf.d/default.conf
 
 RUN mkdir -p /home && \
